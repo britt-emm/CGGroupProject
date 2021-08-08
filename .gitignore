@@ -1,3 +1,5 @@
-postgres_keys.py
-.DS_Store
+**/postgres_keys.py
+**/.DS_Store
 .DS_Store?
+**/.ipynb_checkpoints/
+**/.ipynb_checkpoints
