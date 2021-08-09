@@ -40,6 +40,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
     - log2 of n_features to determine max_features used in each tree
     - n_estimators = 300 for the total trees in the forest
     - min_samples_leaf =.05 for the minimum number of samples at each leaf node
+    - This notebook can be found here: <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/raw_randomForest.ipynb">raw_RandomForest</a>
 
 - Neural Network- Keras
 - Support Vector Machine (SVM) 
@@ -48,4 +49,4 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 Our best models had higher recall for participants with stroke. Although the precision is low, we believe that it is more important to have higher recall (higher true positives) with more false positives than to have a large number of false negatives. The use case for these models would be to identify participants/patients who would be at a higher risk for stroke. It would be more concerning to miss people who could be counseled on reducing their risk of stroke than to counsel people on reducing risk who don't have as high of risk.
 The best performing models were the Logistic Regression, and Random Forest Classifier models.
 ### ETL 
-We completed ETL of the data creating two tables with a shared ID. The tables included demographic and medical data.
+We completed ETL of the data creating two tables with a shared ID. The tables included demographic and medical data. This file can be found here: <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/stroke_ETL.ipynb">stroke_ETL</a>
