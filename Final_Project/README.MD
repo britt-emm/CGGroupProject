@@ -29,6 +29,17 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 ### Models used: 
 - Logistic Regression
 - Random Forest Classifier
+  - Random Forest is a model that builds off the decision tree model. It introduces randomness into the model by having multiple trees that work using a sample of the full dataset that was sampled with replacement (bootstrapping). It also introduces randomness during splitting by either splitting based on all input features or by a random selection of max_features specified when building the model. The increased randomness helps to decrease variance, although it increases bias (tendency to learn the wrong things by not looking at all of the information).
+  - Used GridSearch to identify the best hyperparameters
+  - The best performing model using Random Forest Classifier:
+    - Had a 60/40 train test split
+    - Used Random oversampling
+    - gini impurity to measure the quality of the split
+    - max_depth for each tree was 6
+    - log2 of n_features to determine max_features used in each tree
+    - n_estimators = 300 for the total trees in the forest
+    - min_samples_leaf =.05 for the minimum number of samples at each leaf node
+
 - Neural Network- Keras
 - Support Vector Machine (SVM) 
 
