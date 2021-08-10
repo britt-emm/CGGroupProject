@@ -30,6 +30,22 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 - Logistic Regression
   
   Logistic regression is a type of regression when there are only two target values but the target values have order such as 0 and 1. The values do not have to actually be 0 and 1, but the values are evaluated to compare to 0 and 1 so values up to 0.5 are considered 0 and values 0.5 and above are considered 1.
+    - Used Logistic Regression on two different resampling strategies with two different data scales
+      - Resampling strategies
+        1. Random over sampling and clustered centroid majority reduction
+        2. SMOTEEN - synthetic minority samples and edited nearest neighbor majority class reduction
+      - Train, test split - 75/25%
+      - Best model: Grid Search to identify parameters
+        - used in conjucntion with normed data and SMOTEEN resampling
+        - Train data balanced accuracy:  79%
+        - Test data balanced accuracy:  74%
+        - Model recall score: 86%
+        - Test recall score:  84%
+        - Slightly overfitted
+    - The notebook can be found here : <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/Logistic_Regression_Keras_model.ipynb"> Logistic_Regression_Keras_model</a>
+
+  
+  
 - Random Forest Classifier
 
   Random Forest is a model that builds off the decision tree model. It introduces randomness into the model by having multiple trees that work using a sample of the full dataset that was sampled with replacement (bootstrapping). It also introduces randomness during splitting by either splitting based on all input features or by a random selection of max_features specified when building the model. The increased randomness helps to decrease variance, although it increases bias (tendency to learn the wrong things by not looking at all of the information). Random Forest does not require data to be scaled or normalized
