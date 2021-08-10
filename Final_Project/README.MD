@@ -28,6 +28,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 
 ### Models used: 
 - Logistic Regression
+  Logistic regression is a type of regression when there are only two target values but the target values have order such as 0 and 1. The values do not have to actually be 0 and 1, but the values are evaluated to compare to 0 and 1 so values up to 0.5 are considered 0 and values 0.5 and above are considered 1.
 - Random Forest Classifier
 
   Random Forest is a model that builds off the decision tree model. It introduces randomness into the model by having multiple trees that work using a sample of the full dataset that was sampled with replacement (bootstrapping). It also introduces randomness during splitting by either splitting based on all input features or by a random selection of max_features specified when building the model. The increased randomness helps to decrease variance, although it increases bias (tendency to learn the wrong things by not looking at all of the information). Random Forest does not require data to be scaled or normalized
@@ -43,7 +44,8 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
     - This notebook can be found here: <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/raw_randomForest.ipynb">raw_RandomForest</a>
 
 - Neural Network- Keras
-- Support Vector Machine (SVM) 
+- Support Vector Machine (SVM)
+  SVM tries to find the maximum distance between target values creating a decision boundary but it is not limited to 3-dimensional space to do so. The number of features determines what plane of space the boundary lies in. Support vectors influence this decision boundary. Support vectors are a sample of the training data that are used to help influence the decision boundary.
 
 ### General Findings
 Our best models had higher recall for participants with stroke. Although the precision is low, we believe that it is more important to have higher recall (higher true positives) with more false positives than to have a large number of false negatives. The use case for these models would be to identify participants/patients who would be at a higher risk for stroke. It would be more concerning to miss people who could be counseled on reducing their risk of stroke than to counsel people on reducing risk who don't have as high of risk.
