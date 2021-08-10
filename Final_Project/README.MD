@@ -28,6 +28,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 
 ### Models used: 
 - Logistic Regression
+  
   Logistic regression is a type of regression when there are only two target values but the target values have order such as 0 and 1. The values do not have to actually be 0 and 1, but the values are evaluated to compare to 0 and 1 so values up to 0.5 are considered 0 and values 0.5 and above are considered 1.
 - Random Forest Classifier
 
@@ -45,6 +46,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 
 - Neural Network- Keras
 - Support Vector Machine (SVM)
+  
   SVM tries to find the maximum distance between target values creating a decision boundary but it is not limited to 3-dimensional space to do so. The number of features determines what plane of space the boundary lies in. Support vectors influence this decision boundary. Support vectors are a sample of the training data that are used to help influence the decision boundary.
 
 ### General Findings
