@@ -61,6 +61,16 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
     - This notebook can be found here: <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/raw_randomForest.ipynb">raw_RandomForest</a>
 
 - **Neural Network- Keras**
+  
+  Keras is a neural network, deep learning machine learning model.  We had hoped Keras might be able to more accurately model any non-linear relationships wher we could drive our false negative rate down while keeping false positives better than other linear models.   The Keras binary classification output needed to be converted to 0 or 1 with the stroke data. Description of the better performing Keras model:
+  - Used normalized, but no resampling data.  
+  - Adjust class weights when initializing the model.
+  - Binary crossentropy as the loss.
+  - Used two layers in keras, the first with 50 nodes, the second with 25.  More nodes did not equate to better performance.
+  - Withheld test data and used cross validation
+  - Test data balanced accuracy:  65%
+  - Test recall score:  53%
+  - The notebook can be found here : <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/Logistic_Regression_Keras_model.ipynb"> Logistic_Regression_Keras_model</a>
 
 - **Support Vector Machine (SVM)**
   
