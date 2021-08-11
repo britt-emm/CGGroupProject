@@ -75,7 +75,14 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 - **Support Vector Machine (SVM)**
   
   SVM tries to find the maximum distance between target values creating a decision boundary but it is not limited to 3-dimensional space to do so. The number of features determines what plane of space the boundary lies in. Support vectors influence this decision boundary. Support vectors are a sample of the training data that are used to help influence the decision boundary.
-
+  - Used normalized data
+  - Resampled using SMOTEEN and SVMSMOTE
+    - SVMSMOTE incorporates the SVM algorithm instead of using k-nearest neighbors.
+    - Random state for SMOTEEN and SVMSMOTE is 101.
+    - Best performing model was using SVM with SVMSMOTE.
+  - SVC kernel is set to 'linear' and class_weight is set to 'balanced'.
+  - Test data balanced accuracy score is 76%
+  - The notebook can be found here : 
 ### General Findings
 Our best models had higher recall for participants with stroke. Although the precision is low, we believe that it is more important to have higher recall (higher true positives) with more false positives than to have a large number of false negatives. The use case for these models would be to identify participants/patients who would be at a higher risk for stroke. It would be more concerning to miss people who could be counseled on reducing their risk of stroke than to counsel people on reducing risk who don't have as high of risk.
 The best performing models were the Logistic Regression, Random Forest Classifier, and Support Vector Machines models.
