@@ -82,7 +82,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
     - Best performing model was using SVM with SVMSMOTE.
   - SVC kernel is set to 'linear' and class_weight is set to 'balanced'.
   - Test data balanced accuracy score is 76%
-  - The notebook can be found here : 
+  - The notebook can be found here : <a href = "https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/SVM_SMOTE.ipynb">SVM_model</a>
 ### General Findings
 Our best models had higher recall for participants with stroke. Although the precision is low, we believe that it is more important to have higher recall (higher true positives) with more false positives than to have a large number of false negatives. The use case for these models would be to identify participants/patients who would be at a higher risk for stroke. It would be more concerning to miss people who could be counseled on reducing their risk of stroke than to counsel people on reducing risk who don't have as high of risk.
 The best performing models were the Logistic Regression, Random Forest Classifier, and Support Vector Machines models.
