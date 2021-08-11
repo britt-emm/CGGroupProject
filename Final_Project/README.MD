@@ -25,6 +25,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
 - Over and under-sampling
   - SMOTEN, Cluster Centroids, Random oversampling, Random undersampling, SMOTENC 
   - We tried out a variety of different resampling techniques to address our imbalanced dataset
+  - The preprocessing notebook can be found here: <a href="https://github.com/britt-emm/CGGroupProject/blob/main/Final_Project/Stroke_Preprocessing.ipynb">Stroke_Preprocessing</a>
 
 ### Models used: 
 - **Logistic Regression**
